@@ -31,7 +31,7 @@ body {
     flex-direction: column;
     width: 80%;
     padding: 2rem;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .review-section__top {
@@ -88,4 +88,61 @@ body {
 .review-section__rating-card p {
     color: var(--dark-magenta);
     font-weight: 500;
+}
+
+.review-section__testimonials {
+    display: flex;
+    gap: 1.5rem;
+    min-height: 250px;
+}
+
+.review-section__testimonial-card {
+    background-color: var(--dark-magenta);
+    color: var(--white);
+    height: fit-content;
+    padding: 2rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.review-section__testimonial-card:nth-child(2) {
+    align-self: center;
+}
+
+.review-section__testimonial-card:nth-child(3) {
+    align-self: end;
+}
+
+.review-section__testimonial-card header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.review-section__testimonial-card header img {
+    border-radius: 100%;
+    width: 2.5rem;
+}
+
+.review-section__testimonial-person-name {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.review-section__testimonial-person-name h3,
+.review-section__testimonial-person-name p {
+    font-size: calc(15rem / 16);
+}
+
+.review-section__testimonial-card header p {
+    color: var(--pink);
+    font-weight: 400;
+}
+
+.review-section__testimonial-card blockquote {
+    line-height: 1.25rem;
+    font-weight: 400;
 }
